@@ -43,24 +43,61 @@
 
 <body>
     
-    <!-- dropdown -->
-    <div>
-        <div>
-            <button class="dropdown-btn" onclick="toggle_dropdown(this, null)">
-                <span class="btn-value">All</span>
-                <i class="fa-solid fa-chevron-down"></i>
-            </button>
-        </div>
+    <main class="app-main">
+        <!-- dropdown -->
+        <section>
+            <div class="mB20">
+                <h2 class="f22">Dropdown</h2>
+            </div>
 
-    </div>
-    <!-- \\\ dropdown -->
+            <div class="dropdown-container">
+                <div>
+                    <button class="dropdown-btn" onclick="toggle_dropdown(this, null)">
+                        <span class="btn-value">Select One Option</span>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+                <div class="select-options-container">
+                    <ul class="select-options">
+                        <li class="select-option">
+                            <a class="dropdown-option-link" onclick="toggle_dropdown(null, this)" data-value="Option 1">
+                                <span>Option 1</span>
+                            </a>
+                        </li>
+                        <li class="select-option">
+                            <a class="dropdown-option-link" onclick="toggle_dropdown(null, this)" data-value="Option 2">
+                                <span>Option 2</span>
+                            </a>
+                        </li>
+                        <li class="select-option">
+                            <a class="dropdown-option-link" onclick="toggle_dropdown(null, this)" data-value="Option 3">
+                                <span>Option 2</span>
+                            </a>
+                        </li>
+                    </ul>                                                                
+                </div>
+            </div>
+        </section>
+        <!-- \\\ dropdown -->
+    </main>
 
 
 
 
     
+
+
+    
     <!-- script -->
+        <!-- jquery -->
+            <script src="./js/libraries/jquery.js"></script>
+        <!-- \\\ jquery -->
+
         <script src="./js/script.js"></script>
+
+        <!-- components -->
+            <script src="./js/mini-components.js"></script>
+        <!-- \\\ components -->
     <!-- \\\ script -->
 </body>
 
